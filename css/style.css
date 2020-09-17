@@ -1,0 +1,22 @@
+/* Variables */
+
+:root {
+    --basic-red: #EE3643;
+    --basic-darck-red: #CA2C37;
+    --basic-darkest-red: #BA2732;
+    --basic-blue: #32425C;
+    --basic-darck-blue: #293449;
+    --basic-darkest-blue: #161D29;
+    --basic-green: #63A63E;
+    --basic-darck-green: #518534;
+    --basic-light-green: #5FBB2D;
+    --basic-gray: #C5C5C5;
+    --basic-gray-darck: #B5B5B5;
+    --basic-gray-light: #B5B5B5;
+}
+
+/* Global */
+
+body {
+    min-width: 1200px;
+}
