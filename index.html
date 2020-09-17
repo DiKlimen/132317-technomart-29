@@ -21,7 +21,7 @@
     </form>
     <a class="bookmarks" href="#">Закладки:0</a>
     <a class="basket" href="#">Корзина:0</a>
-    <button class="make-order" type="button">Оформить заказ</button>
+    <a class="make-order">Оформить заказ</a>
     <i class="header-description">Интернет-магазин строительных материалов и инструмента для ремонта</i>
     <a class="header-hpone" href="+78125550555">+7 (812) 555-05-55</a>
     <address class="header-address">г. Санкт-Петербург, ул. Б. Кошюшенная, д. 19/8</address>
@@ -31,20 +31,6 @@
       </li>
       <li class="authorization-item check-in">
         <a href="#">Регистрация</a>
-      </li>
-    </ul>
-    <ul class="user-nav">
-      <li class="user-nav-username">
-        <p>Равшан Джамшутович</p>
-      </li>
-      <li class="user-nav-exit">
-        <a href="#">Выход</a>
-      </li>
-      <li class="user-nav-orders">
-        <a href="#">Мои заказы</a>
-      </li>
-      <li class="user-nav-cabinet">
-        <a href="#">Личный кабинет</a>
       </li>
     </ul>
     <ul class="site-navigation">
@@ -100,6 +86,7 @@
         <a class="promo-item-link" href="#">бесплатно</a>
       </li>
     </ul>
+
     <section class="promo-slider">
       <h2 class="visually-hidden">Каталог товаров по разделам</h2>
       <ul class="promo-slider-list">
@@ -107,14 +94,23 @@
           <h3 class="promo-slider-item-title">Дрели</h3>
           <p class="promo-slider-item-description">Соседям на радость</p>
           <figure class="promo-slider-item-img">
-            <a href="#"><img src="" width="" height="" alt="Каталог перфораторов"></a>
+            <img src="" width="" height="" alt="Каталог перфораторов">
           </figure>
           <a class="button" href="#">Открыть каталог</a>
         </li>
         <!-- Другие слайды-->
       </ul>
+
       <button class="promo-gallery-button gallery-button-back" type="button">Назад</button>
       <button class="promo-gallery-button gallery-button-next" type="button">Вперед</button>
+      <ul class="promo-gallery-button-point">
+        <li class="promo-gallery-button-point-item">
+          <button type="button">1</button>
+        </li>
+        <li class="promo-gallery-button-point-item">
+          <button class="button-point-active" type="button">2</button>
+        </li>
+      </ul>
     </section>
   </section>
 
@@ -132,7 +128,7 @@
             <a href="#">Купить</a>
           </li>
           <li class="button-bookmark">
-            <button type="button">В закладки</button>
+            <a href="#">В закладки</a>
           </li>
         </ul>
       </li>
@@ -146,7 +142,7 @@
             <a href="#">Купить</a>
           </li>
           <li class="button-bookmark">
-            <button type="button">В закладки</button>
+            <a href="#">В закладки</a>
           </li>
         </ul>
       </li>
@@ -160,7 +156,7 @@
             <a href="#">Купить</a>
           </li>
           <li class="button-bookmark">
-            <button type="button">В закладки</button>
+            <a href="#">В закладки</a>
           </li>
         </ul>
       </li>
@@ -173,7 +169,7 @@
             <a href="#">Купить</a>
           </li>
           <li class="button-bookmark">
-            <button type="button">В закладки</button>
+            <a href="#">В закладки</a>
           </li>
         </ul>
       </li>
@@ -267,14 +263,16 @@
     <h2 class="contacts-title">Контакты</h2>
     <p>Вы можете забрать товар сами,<br> 
       заехав в наш офис:</p>
-    <img src="#" width="" height="" alt="Компания «Техномарт» на карте">
+    <a href="#">
+      <img src="#" width="" height="" alt="Компания «Техномарт» на карте">
+    </a>
     <button type="button">Заблудились? Напишите нам!</button>
   </section>
 
 </main>
 
 <footer class="main-footer">
-  <a class="footer-logo" href="#">
+  <a class="footer-logo">
     <img src="" width="" height="" alt="Логотип компании «Техномарт»">
   </a>
   <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
