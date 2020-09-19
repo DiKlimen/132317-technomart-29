@@ -1,22 +1,99 @@
 /* Variables */
 
 :root {
-    --basic-red: #EE3643;
-    --basic-darck-red: #CA2C37;
-    --basic-darkest-red: #BA2732;
-    --basic-blue: #32425C;
-    --basic-darck-blue: #293449;
-    --basic-darkest-blue: #161D29;
-    --basic-green: #63A63E;
-    --basic-darck-green: #518534;
-    --basic-light-green: #5FBB2D;
-    --basic-gray: #C5C5C5;
-    --basic-gray-darck: #B5B5B5;
-    --basic-gray-light: #B5B5B5;
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #EE3643;
+  --darck-red: #CA2C37;
+  --darkest-red: #BA2732;
+  --blue: #32425C;
+  --darck-blue: #293449;
+  --darkest-blue: #161D29;
+  --green: #63A63E;
+  --darck-green: #518534;
+  --light-green: #5FBB2D;
+  --gray: #C5C5C5;
+  --gray-darck: #B5B5B5;
+  --gray-light: #B5B5B5;
+  --ylellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --spesial-smoky-white: #f2f6f8;
+  --spesial-linen: #F7F3EC;
 }
 
 /* Global */
 
 body {
-    min-width: 1200px;
+  min-width: 940px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main nav */
+
+.main-nav {
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background-image: url("../img/top-background.jpg");
+}
+
+.main-nav-wrap-top {
+  background-color: var(--darck-blue);
+}
+
+.header-description {
+  color: var(--red);
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-hpone {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.bookmarks,
+.basket,
+.make-order {
+  color: var(--white);
+}
+
+.header-address {
+  color:var(--blue);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.header-search {
+  color: var(--white);
+}
+
+.authorization-item {
+  list-style: none;
+  color: var(--white);
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: var(--darck-blue);
 }
