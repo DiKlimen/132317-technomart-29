@@ -25,6 +25,8 @@
   --special-yellowlight: #FFD180;
   --spesial-smoky-white: #f2f6f8;
   --spesial-linen: #F7F3EC;
+  --grey-active:  rgba(255, 255, 255, 0.5);
+  --green-shadow: #367315;
 
 }
 
@@ -51,22 +53,10 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
-ul {
-  padding: 0px;
-}
-
-figure {
-  margin: 0px;
-}
-
 /* Main nav */
 
 .main-nav {
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -75,6 +65,7 @@ figure {
 
 .main-nav-wrap-top {
   background-color: var(--darck-blue);
+  color: var(--white);
 }
 
 .header-address {
@@ -85,12 +76,30 @@ figure {
 
 .header-search {
   color: var(--white);
+  
+}
+
+.search {
+  
 }
 
 .bookmarks,
 .basket,
 .make-order {
   color: var(--white);
+}
+
+.bookmarks:hover,
+.basket:hover,
+.make-order:hover {
+  
+}
+
+.bookmarks:active,
+.basket:active,
+.make-order:active {
+  background-color: var(--darkest-blue);
+  color: var(--grey-active);
 }
 
 .header-description {
@@ -177,7 +186,16 @@ figure {
   text-transform: uppercase;
 }
 
-.promo-slider-item {
+.promo-slider-list {
+  list-style: none;
+  padding: 0;
+}
+
+.promo-slider-item-img {
+  margin: 0;
+}
+
+.promo-gallery-button-point li {
   list-style: none;
 }
 
@@ -211,8 +229,11 @@ figure {
   text-transform: uppercase;
 }
 
-.products-item {
+/* Products */
+
+.products-list {
   list-style: none;
+  padding: 0;
 }
 
 .prosuct-title {
@@ -236,6 +257,35 @@ figure {
   color: var(--white);
 }
 
+.product-button-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-button-list a {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button-buy {
+  background-color: var(--green);
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  box-shadow: inset 0px -3px 0px var(--green-shadow);
+  border-radius: 2px;
+}
+
+.button-buy a {
+  color: var(--white);
+}
+
+.button-bookmark a {
+  color: var(--blue);
+}
+
 
 /* Features */
 
@@ -256,6 +306,11 @@ figure {
   line-height: 24px;
 }
 
+.features-nav-list {
+  list-style: none;
+  padding: 0px;
+}
+
 .features-nav-list .features-nav-item-active {
   color: var(--blue);
   background-color: var(--white);
@@ -268,6 +323,10 @@ figure {
   color: var(--white);
 }
 
+.features-list {
+  list-style: none;
+  padding: 0px;
+}
 
 .features-delivery-title {
   font-family: Cuprum;
@@ -280,6 +339,13 @@ figure {
 .features-delivery-description {
   font-size: 13px;
   line-height: 24px;
+}
+
+/* Brands */
+
+.brands ul {
+  list-style: none;
+  padding: 0px;
 }
 
 /* About */
@@ -297,6 +363,8 @@ figure {
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
+  list-style: none;
+  padding: 0px;
 }
 
 
@@ -328,6 +396,8 @@ figure {
 .footet-site-nav {
   font-size: 18px;
   line-height: 24px;
+  list-style: none;
+  padding: 0px;
 }
 
 .footet-site-nav a {
@@ -337,10 +407,17 @@ figure {
 .footer-products-nav {
   font-size: 18px;
   line-height: 24px;
+  list-style: none;
+  padding: 0px;
 }
 
 .footer-products-nav a {
   color: var(--special-yellowlight);
+}
+
+.footer-social-list {
+  list-style: none;
+  padding: 0px;
 }
 
 .copyright {
