@@ -267,7 +267,10 @@ a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  display: block;
+  padding: 10px 12px 10px 25px;
 }
+
 
 .button-buy {
   background-color: var(--green);
@@ -280,6 +283,16 @@ a {
 
 .button-buy a {
   color: var(--white);
+}
+
+.button-buy a:hover {
+  background-color: var(--light-green);
+  box-shadow: inset 0px -3px 0px var(--green-shadow);
+}
+
+.button-buy a:active {
+  background-color: var(--darck-green);
+  box-shadow: inset 0px -3px 0px var(--green-shadow);
 }
 
 .button-bookmark a {
