@@ -28,7 +28,7 @@
   --grey-active:  rgba(255, 255, 255, 0.5);
   --green-shadow: #367315;
   --grey-border: #E5E5E5;
-
+  --header-background: rgba(0, 0, 0, 0.0001);
 }
 
 /* Global */
@@ -61,7 +61,7 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
-  background-image: url("../img/top-background.jpg");
+  background-color: var(--gray-light);
 }
 
 .main-nav-wrap-top {
@@ -128,6 +128,22 @@ a {
   list-style: none;
 }
 
+/* User navigation */
+
+.user-nav-orders a,
+.user-nav-cabinet a {
+  color: var(--blue);
+}
+
+.user-nav-orders a:hover,
+.user-nav-cabinet a:hover {
+  color: var(--red);
+}
+
+.user-nav a:active {
+  color: var(--gray);
+}
+
 .site-navigation {
   padding: 0px;
 }
@@ -187,6 +203,8 @@ a {
   text-transform: uppercase;
 }
 
+/* Promo Slider */
+
 .promo-slider-list {
   list-style: none;
   padding: 0;
@@ -212,6 +230,8 @@ a {
   line-height: 24px;
   color: var(--white);
 }
+
+
 
 .button {
   background-color: var(--red);
@@ -418,6 +438,16 @@ a {
   color: var(--special-white-foooter-nav);
 }
 
+.footet-site-nav a:hover,
+.footer-products-nav a:hover {
+  text-decoration: underline;
+}
+
+.footet-site-nav a:active,
+.footer-products-nav a:active {
+  opacity: 0.5;
+}
+
 .footer-products-nav {
   font-size: 18px;
   line-height: 24px;
@@ -439,23 +469,27 @@ a {
   line-height: 18px;
 }
 
-.footer-email {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.footer-email a {
-  color: var(--special-yellowlight);
-}
-
+.footer-email,
 .footer-development {
   font-size: 16px;
   line-height: 18px;
 }
 
+.footer-email a,
 .footer-development a {
   color: var(--special-yellowlight);
 }
+
+.footer-email a:hover,
+.footer-development a:hover {
+  text-decoration: underline;
+}
+
+.footer-email a:active,
+.footer-development a:active {
+  color: var(--red);
+}
+
 
 /* User nav */
 
