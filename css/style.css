@@ -54,6 +54,19 @@ a {
   text-decoration: none;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /* Main nav */
 
 .main-nav {
@@ -62,11 +75,26 @@ a {
   line-height: 24px;
   color: var(--white);
   background-color: var(--gray-light);
+  display: grid;
+}
+
+.main-header-bar {
+  background-color: var(--darck-blue);
+  
 }
 
 .main-nav-wrap-top {
-  background-color: var(--darck-blue);
   color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  height: 42px;
+}
+
+.main-header-logo {
+  width: 220px;
 }
 
 .header-address {
@@ -101,6 +129,13 @@ a {
 .make-order:active {
   background-color: var(--darkest-blue);
   color: var(--grey-active);
+}
+
+.main-nav-wrap-midle {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .header-description {
@@ -146,6 +181,8 @@ a {
 
 .site-navigation {
   padding: 0px;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .site-navigation-item a {
@@ -162,24 +199,30 @@ a {
   display: none;
 }
 
+
 .promo-item-material {
  background-color: var(--ylellow);
+ grid-area: material;
 }
 
 .promo-item-tool {
   background-color: var(--special-blue);
+  grid-area: tool;
 }
 
 .promo-item-technic {
   background-color: var(--special-lilac);
+  grid-area: technic;
 }
 
 .promo-item-discount {
   background-color: var(--special-greenlight);
+  grid-area: discount;
 }
 
 .promo-item-delivery {
   background-color: var(--ylellow);
+  grid-area: delivery;
 } 
 
 .promo-item-title {
@@ -190,6 +233,11 @@ a {
 
 .promo-list {
   padding: 0px;
+  display: grid;
+  grid-template-areas: 
+  "material tool technic"
+  ". . discount"
+  ". . delivery";
 }
 
 .promo-list li {
@@ -203,7 +251,19 @@ a {
   text-transform: uppercase;
 }
 
+/* Cntainer */
+
+.main-box {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
 /* Promo Slider */
+
+.promo-slider {
+  grid-area: promo-slider;
+}
 
 .promo-slider-list {
   list-style: none;
@@ -255,6 +315,8 @@ a {
 .products-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .prosuct-title {
@@ -377,9 +439,19 @@ a {
 
 /* Brands */
 
+.brands-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .brands ul {
   list-style: none;
   padding: 0px;
+}
+
+.about-contacts {
+  display: grid;
+  grid-template-columns: 1fr 300px;
 }
 
 /* About */
@@ -419,7 +491,33 @@ a {
 
 .main-footer {
   font-family: Cuprum;
+  background-color: var(--blue);
 }
+
+.footer-upper-box {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer-lower-box {
+  width: 940px;
+  margin: 0 auto;
+  background-color: var(--darck-blue);
+}
+
+.footer-upper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-lower {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+
 
 .footer-address {
   font-size: 18px;
@@ -535,9 +633,6 @@ a {
   text-transform: uppercase;
   list-style: none;
 }
-
-
-/* filters */
 
 
 .sortin-title {
