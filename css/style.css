@@ -108,9 +108,7 @@ a {
   
 }
 
-.search {
-  
-}
+
 
 .bookmarks,
 .basket,
@@ -118,16 +116,12 @@ a {
   color: var(--white);
 }
 
-.bookmarks:hover,
-.basket:hover,
-.make-order:hover {
-  
-}
+
 
 .bookmarks:active,
 .basket:active,
 .make-order:active {
-  background-color: var(--darkest-blue);
+  /* background-color: var(--darkest-blue); */
   color: var(--grey-active);
 }
 
@@ -234,6 +228,7 @@ a {
 .promo-list {
   padding: 0px;
   display: grid;
+  gap: 10px;
   grid-template-areas: 
   "material tool technic"
   ". . discount"
