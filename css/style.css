@@ -80,7 +80,6 @@ a {
 
 .main-header-bar {
   background-color: var(--darck-blue);
-  
 }
 
 .main-nav-wrap-top {
@@ -90,12 +89,25 @@ a {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  height: 42px;
+  height: 47px;
 }
 
 .main-header-logo {
   width: 220px;
+  background-color: var(--red);
+  padding: 13px;
 }
+
+.main-header-logo:active{
+  background-color: var(--darkest-red);
+}
+
+.header-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 
 .header-address {
   color:var(--blue);
@@ -121,7 +133,7 @@ a {
 .bookmarks:active,
 .basket:active,
 .make-order:active {
-  /* background-color: var(--darkest-blue); */
+  background-color: var(--darkest-blue);
   color: var(--grey-active);
 }
 
@@ -228,11 +240,17 @@ a {
 .promo-list {
   padding: 0px;
   display: grid;
-  gap: 10px;
+  gap: 20px;
   grid-template-areas: 
   "material tool technic"
-  ". . discount"
-  ". . delivery";
+  "slider slider discount"
+  "slider slider delivery";
+  grid-template-rows: 123px 123px 123px;
+}
+
+.promo-item-block {
+  width: 300px;
+  height: 123px;
 }
 
 .promo-list li {
@@ -257,16 +275,56 @@ a {
 /* Promo Slider */
 
 .promo-slider {
-  grid-area: promo-slider;
+  grid-area: slider;
 }
 
 .promo-slider-list {
   list-style: none;
   padding: 0;
+  position: relative;
+  height: 266px;
+}
+
+.promo-slider-item-title {
+  position: absolute;
+  margin: 0;
+  top: 23px;
+  left: 24px;
+}
+
+.promo-slider-item-description {
+  position: absolute;
+  margin: 0;
+  top: 64px;
+  left: 24px;
 }
 
 .promo-slider-item-img {
   margin: 0;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+.gallery-button-back {
+  position: absolute;
+  left: 10px;
+  bottom: 100px;
+}
+
+.gallery-button-next {
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
+}
+
+.promo-gallery-button-point {
+  position: absolute;
+  left: 310px;
+  bottom: 20px;
 }
 
 .promo-gallery-button-point li {
@@ -295,6 +353,9 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
+  height: 38px;
+  width: 192px;
+  display: block;
 }
 
 .section-title {
@@ -395,6 +456,16 @@ a {
 .features-description {
   font-size: 13px;
   line-height: 24px;
+}
+
+.features-slider {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 80px;
+}
+
+.features-delivery-title {
+  margin: 0;
 }
 
 .features-nav-list {
