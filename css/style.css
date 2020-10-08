@@ -95,7 +95,7 @@ a {
 .main-header-logo {
   width: 220px;
   background-color: var(--red);
-  padding: 13px;
+  text-align: center;
 }
 
 .main-header-logo:active{
@@ -103,9 +103,7 @@ a {
 }
 
 .header-logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  margin-top: 12px;
 }
 
 
@@ -353,10 +351,22 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
-  height: 38px;
-  width: 192px;
-  display: block;
+  padding: 11px 24px 11px 24px;
+  text-align: center;
 }
+
+.button-linck {
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--darck-red);
+}
+
+.button:active {
+  background-color: var(--darkest-red);
+}
+
 
 .section-title {
   font-family: Cuprum;
@@ -375,11 +385,17 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.products-item {
+  text-align: center;
+}
+
 .prosuct-title {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
 }
+
+
 
 .old-price {
   font-size: 17px;
@@ -418,6 +434,7 @@ a {
   text-align: center;
   box-shadow: inset 0px -3px 0px var(--green-shadow);
   border-radius: 2px;
+  margin: 0 auto;
 }
 
 .button-buy a {
@@ -513,6 +530,10 @@ a {
 .brands ul {
   list-style: none;
   padding: 0px;
+}
+
+.brands-item {
+  text-align: center;
 }
 
 .about-contacts {
