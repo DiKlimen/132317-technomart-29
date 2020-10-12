@@ -29,6 +29,7 @@
   --green-shadow: #367315;
   --grey-border: #E5E5E5;
   --header-background: rgba(0, 0, 0, 0.0001);
+  --section-title: #F9F5F0;
 }
 
 /* Global */
@@ -54,6 +55,15 @@ a {
   text-decoration: none;
 }
 
+/* Different */
+
+.wrap-section-title {
+  background-color: var(--section-title);
+  display: flex;
+  height: 89px;
+  align-items: center;
+}
+
 /* Grid */
 
 .page {
@@ -67,6 +77,15 @@ a {
   align-content: start;
 }
 
+.catalog-wrap {
+  display: grid;
+  grid-template-columns: 220px 700px;
+  grid-template-areas: 
+  "filters sorting"
+  "filters products"
+  "filters pagination"
+}
+
 /* Main nav */
 
 .main-nav {
@@ -78,32 +97,31 @@ a {
   display: grid;
 }
 
+
 .main-header-bar {
   background-color: var(--darck-blue);
 }
 
 .main-nav-wrap-top {
   color: var(--white);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  height: 47px;
+  align-items: center;
 }
 
 .main-header-logo {
   width: 220px;
   background-color: var(--red);
-  text-align: center;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-header-logo:active{
   background-color: var(--darkest-red);
-}
-
-.header-logo {
-  margin-top: 12px;
 }
 
 
@@ -124,6 +142,7 @@ a {
 .basket,
 .make-order {
   color: var(--white);
+  margin: 0 auto;
 }
 
 
@@ -133,6 +152,15 @@ a {
 .make-order:active {
   background-color: var(--darkest-blue);
   color: var(--grey-active);
+}
+
+.make-order {
+  height: 42px;
+  background-color: var(--green);
+}
+
+.make-order a {
+  padding: 9px 16px 9px;
 }
 
 .main-nav-wrap-midle {
@@ -155,6 +183,7 @@ a {
 
 .authorization-list {
   padding: 0px;
+  display: flex;
 }
 
 .authorization-item a {
@@ -183,10 +212,41 @@ a {
   color: var(--gray);
 }
 
+.user-nav-authorization {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "name exit"
+  "orders cabinet";
+}
+
+.user-nav-username {
+  grid-area: name;
+}
+
+.user-nav-exit {
+  grid-area: exit;
+}
+
+.user-nav-orders {
+  grid-area: orders;
+}
+
+.user-nav-cabinet {
+  grid-area: cabinet;
+}
+
 .site-navigation {
   padding: 0px;
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  height: 55px;
+  justify-content: space-around;
+  background-color: var(--blue);
+  border-bottom: 5px solid var(--darck-blue);
+  align-items: center;
 }
 
 .site-navigation-item a {
@@ -385,6 +445,13 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.products-list-catalog {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .products-item {
   text-align: center;
 }
@@ -456,11 +523,14 @@ a {
 }
 
 
+
 /* Features */
 
 
 .features {
   color: var(--black);
+  background-color: var(--special-white-foooter-nav);
+  height: 522px;
 }
 
 .features-title {
@@ -520,7 +590,11 @@ a {
   line-height: 24px;
 }
 
+
+
 /* Brands */
+
+
 
 .brands-list {
   display: grid;
@@ -617,6 +691,8 @@ a {
   line-height: 24px;
   list-style: none;
   padding: 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footet-site-nav a {
@@ -638,6 +714,8 @@ a {
   line-height: 24px;
   list-style: none;
   padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .footer-products-nav a {
@@ -647,6 +725,7 @@ a {
 .footer-social-list {
   list-style: none;
   padding: 0px;
+  display: flex;
 }
 
 .copyright {
@@ -700,6 +779,7 @@ a {
 /* breadcrumbs */
 
 .breadcrumbs {
+  display: flex;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -713,6 +793,11 @@ a {
 }
 
 /* filters */
+
+.filters {
+  width: 220px;
+  grid-area: filters;
+}
 
 .filters-title {
   font-size: 13px;
@@ -735,6 +820,8 @@ a {
 
 .sorting {
   background-color: var(--spesial-linen);
+  display: flex;
+  grid-area: sorting;
 }
 
 .sorting-list {
@@ -742,6 +829,7 @@ a {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+  display: flex;
 }
 
 .sorting-item {
@@ -768,6 +856,9 @@ a {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  grid-area: pagination;
+  list-style: none;
+  display: flex;
 }
 
 .pagination li {
@@ -799,4 +890,8 @@ a {
 
 .pagination-next a {
   padding: 10px 33px 10px 30px;
+}
+
+.products-catalog {
+  grid-area: products;
 }
