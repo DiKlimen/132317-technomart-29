@@ -246,17 +246,18 @@ a {
   justify-content: space-around;
   background-color: var(--blue);
   border-bottom: 5px solid var(--darck-blue);
-  align-items: center;
+  list-style: none;
 }
 
 .site-navigation-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
+  display: inline-block;
 }
 
 .site-navigation li {
-  list-style: none;
+  margin: auto;
 }
 
 .visually-hidden {
