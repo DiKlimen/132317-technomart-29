@@ -142,12 +142,14 @@ a {
 }
 
 .header-search {
-  color: var(--white);
-  width: 271px;
+  
 }
 
-.search {
-  width: 100%;
+.header-search input {
+  width: 271px;
+  height: 42px;
+  border: none;
+  background-color: var(--darck-blue);
 }
 
 
@@ -270,20 +272,29 @@ a {
   display: flex;
   height: 55px;
   justify-content: space-around;
+  align-items: center;
   background-color: var(--blue);
   border-bottom: 5px solid var(--darck-blue);
   list-style: none;
+}
+
+.site-navigation-item {
+  height: 100%;
 }
 
 .site-navigation-item a {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
-  display: inline-block;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .site-navigation li {
-  margin: auto;
+  
 }
 
 .visually-hidden {
@@ -508,25 +519,37 @@ a {
   align-items: center;
   flex-direction: column;
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   margin-right: 20px;
   box-sizing: border-box;
   border: 1px solid var(--brends-borere);
+  padding-bottom: 21px;
 }
 
 .products-item:nth-child(4){
   margin-right: 0;
 }
 
-.products-item img {
-  order: -1;
-}
 
 .prosuct-title {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
+  text-align: center;
+  margin-top: 0;
 }
+
+.prosuct-img-wrap {
+  height: 170px;
+  order: -1;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+
 
 
 
@@ -536,6 +559,8 @@ a {
   text-transform: uppercase;
   text-decoration-line: line-through;
   color: var(--special-gray);
+  margin-top: 0px;
+  margin-bottom: 13px;
 }
 
 .price {
@@ -544,6 +569,10 @@ a {
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--red);
+  display: block;
+  padding: 10px 32px;
+  margin: 0px;
+  margin-top: auto;
 }
 
 .product-button-list {
@@ -687,10 +716,16 @@ a {
   border: 1px solid var(--brends-borere);
   box-sizing: border-box;
   vertical-align: middle;
-  display: flex;
+  
 }
 
 .brands-item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.brands-item img {
   margin: auto;
 }
 
