@@ -33,6 +33,8 @@
   --brends-borere: #EAEAEA;
   --header-background: #F3F7F8;
   --promo-link: rgba(255, 255, 255, 0.3);
+  --promo-link-hover: rgb(197, 197, 197 , 0.3);
+  --promo-link-active: rgb(169, 169, 169, 0.3);
 }
 
 /* Global */
@@ -193,9 +195,19 @@ a {
   margin-bottom: 40px;
 }
 
-.header-hpone {
+.header-phone-wrap {
+  width: 270px;
+  height: 45px;
+  box-sizing: border-box;
+  background: var(--special-gray-adress);
+  border: 3px solid var(--white);
+  display: flex;
+}
+
+.header-phone {
   color: var(--red);
   font-weight: 700;
+  margin: auto;
 }
 
 .authorization-list {
@@ -363,7 +375,6 @@ a {
 .promo-item-link-wrap {
   width: 135px;
   height: 38px;
-  background-color: var(--promo-link);
   display: flex;
   margin-left: 22px;
 }
@@ -373,8 +384,21 @@ a {
   line-height: 18px;
   color: var(--white);
   text-transform: uppercase;
-  margin: auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  background-color: var(--promo-link);
 }
+
+.promo-item-link:hover {
+  background-color: var(--promo-link-hover);
+}
+
+.promo-item-link:active {
+  background-color: var(--promo-link-active);
+}
+
 
 /* Container */
 
