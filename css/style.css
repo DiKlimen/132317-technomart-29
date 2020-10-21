@@ -695,6 +695,7 @@ input[type="search"]::placeholder {
   display: flex;
   margin-top: 0;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .products-list-catalog {
@@ -740,6 +741,7 @@ input[type="search"]::placeholder {
   align-items: center;
   justify-content: center;
   margin-bottom: 9px;
+  background-color: var(--white);
 }
 
 .new-product::after{
@@ -793,6 +795,15 @@ input[type="search"]::placeholder {
 .product-button-list {
   list-style: none;
   padding: 0;
+  position: absolute;
+  z-index: -1;
+  width: 218px;
+  height: 170px;
+  background-color: var(--white);
+}
+
+.products-item:hover .product-button-list {
+  z-index: 1;
 }
 
 .product-button-list a {
@@ -813,6 +824,22 @@ input[type="search"]::placeholder {
   box-shadow: inset 0px -3px 0px var(--green-shadow);
   border-radius: 2px;
   margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 38px;
+}
+
+.button-buy::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  opacity: 0.6;
+  left: 25px;
+  top: 10px;
 }
 
 .button-buy a {
@@ -829,10 +856,25 @@ input[type="search"]::placeholder {
   box-shadow: inset 0px -3px 0px var(--green-shadow);
 }
 
+
 .button-bookmark a {
   color: var(--blue);
+  box-sizing: border-box;
+  border: 3px solid var(--green);
+  border-radius: 2px;
+  width: 135px;
+  height: 38px;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 
+.button-bookmark a:hover {
+  border-color: var(--blue);
+}
+
+.button-bookmark a:active {
+  opacity: 0.5;
+}
 
 
 /* Features */
@@ -961,13 +1003,16 @@ input[type="search"]::placeholder {
   border: 1px solid var(--brends-borere);
   box-sizing: border-box;
   vertical-align: middle;
-  
 }
 
 .brands-item a {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.brands-item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
 }
 
 .brands-item img {
