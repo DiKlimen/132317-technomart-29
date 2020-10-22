@@ -31,8 +31,6 @@
           <div class="make-order">
             <a href="#">Оформить заказ</a>
           </div>
-          
-  
         </div>
       </div>
       <div class="main-nav-wrap-midle">
@@ -123,7 +121,47 @@
     <div class="catalog-wrap">
       <section class="filters">
         <h2 class="filters-title">Фильтр:</h2>
-        <!-- Здесь будет форма фильтров-->
+        <form class="filter-form" method="GET" action="#">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание</legend>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input class="filter-input-radio filter-input" type="radio" name="product-group" id="filter-rechargeable" checked>
+                <label for="filter-rechargeable">Аккумуляторные</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="filter-input-radio filter-input" type="radio" name="product-group" id="filter-network">
+                <label for="filter-network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
     
       <section class="sorting">
