@@ -250,6 +250,10 @@ input[type="search"]::placeholder {
   box-sizing: border-box;
 }
 
+.basker-full {
+  background-color: var(--red);
+}
+
 .basket::before {
   content: "";
   width: 15px;
@@ -664,10 +668,27 @@ input[type="search"]::placeholder {
   position: absolute;
   left: 310px;
   bottom: 20px;
+  display: flex;
+  width: 27px;
+  justify-content: space-between;
 }
 
 .promo-gallery-button-point li {
   list-style: none;
+}
+
+.promo-gallery-button-point button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  cursor: pointer;
+}
+
+.promo-gallery-button-point .current {
+  background-color: var(--red);
 }
 
 .promo-slider-item-title {
