@@ -401,24 +401,30 @@
   </section>
 
   <section class="modal modal-feedback">
-    <h2 class="">Форма обратной связи</h2>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-
-      <div class="modal-form-top">
-        <p>
-          <label class="modal-title-form" for="feedback-form-name">Ваше имя:</label>
-          <input class="feedback-form-name input-form" type="text" id="feedback-form-name" name="user-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label class="modal-title-form" for="feedback-form-email">Ваш e-mail:</label>
-          <input class="feedback-form-email input-form" type="email" id="feedback-form-email" name="user-email" placeholder="email@example.com">
-        </p>
+    
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    
+      <div class="modal-feedback-wrap">
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post"></form>
+          <div class="modal-form-top">
+            <p>
+              <label class="modal-title-form" for="feedback-form-name">Ваше имя:</label>
+              <input class="feedback-form-name input-form" type="text" id="feedback-form-name" name="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label class="modal-title-form" for="feedback-form-email">Ваш e-mail:</label>
+              <input class="feedback-form-email input-form" type="email" id="feedback-form-email" name="user-email" placeholder="email@example.com">
+            </p>
+          </div>
+          <label class="modal-title-form" for="feedback-form-text">Текст письма:</label>
+          <textarea class="feedback-form-text input-form" name="feedback-form-text" id="feedback-form-text">В свободной форме</textarea>
+        </form>
       </div>
 
-      <label class="modal-title-form" for="feedback-form-text">Текст письма:</label>
-      <textarea class="feedback-form-text" name="feedback-form-text" id="feedback-form-text">В свободной форме</textarea>
+    <div class="modal-footer">
+      <button class="modal-button" type="button">Отправить</button>
+    </div>
 
-    </form>
   </section>
 
   <section class="modal modal-map">
