@@ -195,8 +195,8 @@ input[type="search"]::placeholder {
   outline: none;
 }
 
-.header-search:focus path {
-  fill: black;
+input:focus ~ .search-icon-svg path {
+  fill: var(--red);
 }
 
 
@@ -648,28 +648,40 @@ input[type="search"]::placeholder {
 
 .slider-button {
   position: absolute;
-  bottom: 20px;
-  left: 10px;
+  bottom: 27px;
+  left: 24px;
+}
+
+.promo-gallery-button {
+  width: 22px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .gallery-button-back {
   position: absolute;
-  left: 10px;
-  bottom: 100px;
+  left: 24px;
+  top: 122px;
+  background-image: url(../img/icon-back.svg);
 }
 
 .gallery-button-next {
   position: absolute;
-  right: 10px;
-  bottom: 100px;
+  right: 24px;
+  top: 122px;
+  background-image: url(../img/icon-next.svg);
 }
 
 .promo-gallery-button-point {
   position: absolute;
-  left: 310px;
-  bottom: 20px;
+  padding: 0;
+  left: 295px;
+  bottom: 36px;
   display: flex;
-  width: 27px;
+  width: 29px;
+  height: 10px;
   justify-content: space-between;
 }
 
@@ -682,7 +694,7 @@ input[type="search"]::placeholder {
   height: 10px;
   padding: 0;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--white);
   border: 2px solid var(--white);
   cursor: pointer;
 }
@@ -719,6 +731,8 @@ input[type="search"]::placeholder {
 
 .button-linck {
   color: var(--white);
+  padding-left: 46px;
+  padding-right: 46px;
 }
 
 .button:hover {
@@ -950,9 +964,23 @@ input[type="search"]::placeholder {
   height: 522px;
   box-sizing: border-box;
   padding-top: 64px;
+  
 }
 
+.features-wrap {
+  position: relative;
+}
 
+.features-separator {
+  background-image: url(../img/separator.png);
+  background-repeat: no-repeat;
+  height: 279px;
+  width: 10px;
+  z-index: 1;
+  position: absolute;
+  left: 230px;
+  bottom: 35px
+}
 
 .features-title {
   font-family: Cuprum;
@@ -972,13 +1000,14 @@ input[type="search"]::placeholder {
 .features-slider {
   display: grid;
   grid-template-columns: 240px 1fr;
+  grid-template-rows: 283px;
   gap: 80px;
 }
 
 .features-nav-list {
   list-style: none;
   padding: 0px;
-  background-color: var(--blue);
+  
 }
 
 .features-nav-list .features-nav-item-active a {
@@ -996,7 +1025,7 @@ input[type="search"]::placeholder {
   box-shadow: 
   0px 1px 0px #293449, 
   inset 0px 1px 0px #405069;
-  
+  background-color: var(--blue);
 }
 
 .features-nav-item a{
@@ -1018,11 +1047,9 @@ input[type="search"]::placeholder {
 .features-list {
   list-style: none;
   padding: 0px;
-}
-
-.features-delivery {
   background: url("../img/features-delivery-icon.png") no-repeat 100% 0;
 }
+
 
 .features-delivery-title {
   font-family: Cuprum;

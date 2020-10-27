@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<!--Разметка на флексах-->
 <head>
   <meta charset="utf-8">
   <meta name="viewpurt" content="width=device-width, initial-scale=1">
@@ -21,10 +20,11 @@
           <img class="header-logo" src="img/logo.svg" width="107" height="17" alt="Логотип магазина Техномарт">
         </a>
         <form class="header-search" action="#" method="POST">
+          <input type="search" placeholder="Поиск:">
           <svg class="search-icon-svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
           </svg>
-          <input type="search" placeholder="Поиск:">
+          
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
         <a class="basket" href="#">Корзина: 0</a>
@@ -128,13 +128,13 @@
               <a class="button button-linck" href="#">Открыть каталог</a>
             </div>
             
-            <button class="promo-gallery-button gallery-button-back" type="button">Назад</button>
-            <button class="promo-gallery-button gallery-button-next" type="button">Вперед</button>
+            <button class="promo-gallery-button gallery-button-back" type="button" aria-label="Назад"></button>
+            <button class="promo-gallery-button gallery-button-next" type="button" aria-label="Вперед"></button>
             <ul class="promo-gallery-button-point">
-              <li class="promo-gallery-button-point-item">
+              <li>
                 <button type="button" aria-label="Первый слайд"></button>
               </li>
-              <li class="promo-gallery-button-point-item">
+              <li>
                 <button class="current" type="button" aria-label="Первый слайд"></button>
               </li>
             </ul>
@@ -292,6 +292,7 @@
           </li>
           <!-- Другие слайды -->
         </ul>
+        <div class="features-separator"></div>
       </div>  
     </div>
   </section>
