@@ -1522,6 +1522,38 @@ input:focus ~ .search-icon-svg path {
   opacity: 1;
 }
 
+.sorting-current a {
+  color: var(--red);
+  opacity: 1;
+  border: none;
+}
+
+
+.sorting-current:hover a {
+  color: var(--red);
+  opacity: 1;
+  border: none;
+}
+
+.sorting-button-list {
+  margin-right: 20px;
+  width: 43px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-button {
+  border: none;
+  background-color: transparent;
+  width: 11px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.sorting-rurrent path{
+  fill: var(--red);
+}
+
 /* pagination */
 
 .pagination {
