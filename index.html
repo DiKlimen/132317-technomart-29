@@ -118,29 +118,39 @@
       <li class="promo-slider">
         <h2 class="visually-hidden">Каталог товаров по разделам</h2>
         <ul class="promo-slider-list">
-          <li class="promo-slider-item">
+
+          <li class="promo-slider-item slide-current">
             <h3 class="promo-slider-item-title">Перфораторы</h3>
             <p class="promo-slider-item-description">Настоящие мужские игрушки</p>
             <figure class="promo-slider-item-img">
               <img src="img/slider.jpg" width="620" height="266" alt="Каталог перфораторов">
             </figure>
-            <div class="slider-button">
-              <a class="button button-linck" href="#">Открыть каталог</a>
-            </div>
-            
-            <button class="promo-gallery-button gallery-button-back" type="button" aria-label="Назад"></button>
-            <button class="promo-gallery-button gallery-button-next" type="button" aria-label="Вперед"></button>
-            <ul class="promo-gallery-button-point">
-              <li>
-                <button type="button" aria-label="Первый слайд"></button>
-              </li>
-              <li>
-                <button class="current" type="button" aria-label="Первый слайд"></button>
-              </li>
-            </ul>
           </li>
+
+          <li class="promo-slider-item">
+            <h3 class="promo-slider-item-title">Дрели</h3>
+            <p class="promo-slider-item-description">Соседям на радость!</p>
+            <figure class="promo-slider-item-img">
+              <img src="img/slider2.jpg" width="620" height="266" alt="Каталог перфораторов">
+            </figure>
+          </li>
+
           <!-- Другие слайды-->
-        </ul>    
+        </ul>
+        <div class="slider-button">
+          <a class="button button-linck" href="#">Открыть каталог</a>
+        </div>
+        
+        <button class="promo-gallery-button gallery-button-back" type="button" aria-label="Назад"></button>
+        <button class="promo-gallery-button gallery-button-next" type="button" aria-label="Вперед"></button>
+        <ul class="promo-gallery-button-point">
+          <li>
+            <button type="button" aria-label="Первый слайд"></button>
+          </li>
+          <li>
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+          </li>
+        </ul>   
       </li>
   </section>
 
@@ -272,25 +282,38 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="features-slider">
         <ul class="features-nav-list">
-          <li class="features-nav-item features-nav-item-active">
+          <li class="features-nav-item">
             <a class="" href="#">Доставка</a>
           </li>
           <li class="features-nav-item">
             <a href="#">Гарантия</a>
           </li>
-          <li class="features-nav-item">
+          <li class="features-nav-item features-nav-item-active">
             <a href="#">Кредит</a>
           </li>
         </ul>
         <ul class="features-list">
-          <li class="features-delivery">
-            <h3 class="features-delivery-title">Доставка</h3>
-            <p class="features-delivery-description">Мы с удовольствием доставим ваш товар прямо<br> 
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
+          <li class="features-list-item feature-delivery">
+            <h3 class="features-list-title">Доставка</h3>
+            <p class="features-list-description">Мы с удовольствием доставим ваш товар прямо <br>
+              к вашему подъезду совершенно бесплатно! <br>
+              Ведь мы неплохо заработаем, <br>
               поднимая его на ваш этаж!</p>
           </li>
-          <!-- Другие слайды -->
+          <li class="features-list-item features-warranty">
+            <h3 class="features-list-title">Гарантия</h3>
+            <p class="features-list-description">Если купленный у нас товар поломается или заискрит, <br>
+              а также в случае пожара, спровоцированного его <br>
+              возгоранием,  вы всегда можете быть уверены в нашей  <br> 
+              гарантии. Мы обменяем сгоревший товар на новый. <br>
+              Дом уж восстановите как-нибудь сами.</p>
+          </li>
+          <li class=" features-list-item features-credit features-current">
+            <h3 class="features-list-title">Кредит</h3>
+            <p class="features-list-description">Залезть в долговую яму стало проще! <br>
+              Кредитные консультанты придут вам на помощь.</p>
+            <button class="button" type="button">Отправить заявку</button>
+          </li>
         </ul>
         <div class="features-separator"></div>
       </div>  

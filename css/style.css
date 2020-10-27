@@ -619,6 +619,7 @@ input:focus ~ .search-icon-svg path {
 
 .promo-slider {
   grid-area: slider;
+  position: relative;
 }
 
 .promo-slider-list {
@@ -644,6 +645,14 @@ input:focus ~ .search-icon-svg path {
 
 .promo-slider-item-img {
   margin: 0;
+}
+
+.promo-slider-item {
+  display: none;
+}
+
+.slide-current {
+  display: block;
 }
 
 .slider-button {
@@ -727,6 +736,7 @@ input:focus ~ .search-icon-svg path {
   color: var(--white);
   padding: 11px 24px 11px 24px;
   text-align: center;
+  border: none;
 }
 
 .button-linck {
@@ -743,6 +753,11 @@ input:focus ~ .search-icon-svg path {
   background-color: var(--darkest-red);
 }
 
+.button:active, 
+.button:focus {
+  outline: none;
+}
+
 
 .section-title {
   font-family: Cuprum;
@@ -754,6 +769,9 @@ input:focus ~ .search-icon-svg path {
 }
 
 .wrap-section-title .button {
+  width: 192px;
+  padding-left: 0;
+  padding-right: 0;
   margin-right: 14px;
 }
 
@@ -1047,11 +1065,14 @@ input:focus ~ .search-icon-svg path {
 .features-list {
   list-style: none;
   padding: 0px;
-  background: url("../img/features-delivery-icon.png") no-repeat 100% 0;
 }
 
+.features-list-item {
+  height: 270px;
+  display: none;
+}
 
-.features-delivery-title {
+.features-list-title {
   font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
@@ -1060,18 +1081,35 @@ input:focus ~ .search-icon-svg path {
   margin: 0;
   margin-bottom: 30px;
   position: relative;
-  
 }
 
-
-
-
-.features-delivery-description {
+.features-list-description {
   font-size: 13px;
   line-height: 24px;
 }
 
+.feature-delivery {
+  background: url("../img/features/features-delivery-icon.png") no-repeat 100% 0;
+}
 
+.features-warranty {
+  background: url("../img/features/features-warrant-icon.png") no-repeat 100% 0;
+}
+
+.features-credit {
+  background: url("../img/features/features-credit-icon.png") no-repeat 100% 0;
+}
+
+.features-credit button {
+  width: 195px;
+  background-color: var(--modal-border);
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.features-current {
+  display: block;
+}
 
 /* Brands */
 
@@ -1778,19 +1816,19 @@ input:focus ~ .search-icon-svg path {
   top: 55px;
 }
 
-.checkou-botton,
-.continue-botton {
+.checkou-button,
+.continue-button {
   width: 192px;
 }
 
-.continue-botton {
+.continue-button {
   margin-left: 10px;
   background-color: var(--white);
   color: var(--black);
 }
 
-.continue-botton:active,
-.continue-botton:hover,
-.continue-botton:focus {
+.continue-button:active,
+.continue-button:hover,
+.continue-button:focus {
   background-color: var(--white);
 }
