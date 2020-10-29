@@ -152,6 +152,8 @@ a {
   color:var(--blue);
   font-size: 14px;
   line-height: 24px;
+  margin-top: 3px;
+  margin-left: 8px;
 }
 
 .header-search {
@@ -244,8 +246,7 @@ input:focus ~ .search-icon-svg path {
 .basket {
   display: flex;
   align-items: center;
-  padding-left: 49px;
-  /* margin-right: 20px; */
+  padding-left: 48px;
   height: 42px;
   width: 150px;
   position: relative;
@@ -275,7 +276,7 @@ input:focus ~ .search-icon-svg path {
   width: 150px;
   box-sizing: border-box;
   align-items: center;
-  padding-left: 45px;
+  padding-left: 42px;
   position: relative;
 }
 
@@ -296,19 +297,31 @@ input:focus ~ .search-icon-svg path {
   opacity: 1;
 }
 
+.basket:hover::before {
+  opacity: 1;
+}
+
 .main-nav-wrap-midle {
   display: flex;
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   align-items: top;
+  margin-bottom: 40px;
 }
 
 .header-description {
   color: var(--red);
   font-size: 16px;
   line-height: 23px;
-  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-top: 3px;
+  width: 200px;
+}
+
+.nav-header-adress {
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .header-phone-wrap {
@@ -324,12 +337,29 @@ input:focus ~ .search-icon-svg path {
   color: var(--red);
   font-weight: 700;
   margin: auto;
+  line-height: 30px;
+  font-size: 21px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: -7px;
+  top: 5px;
 }
 
 .authorization-list {
   padding: 0px;
   margin: 0;
   display: flex;
+  margin-top: 5px;
 }
 
 
@@ -359,7 +389,7 @@ input:focus ~ .search-icon-svg path {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 24px;
-  padding-left: 50px;
+  padding-left: 45px;
   display: block;
   background-color: var(--white);
   margin-right: 10px;
@@ -377,6 +407,10 @@ input:focus ~ .search-icon-svg path {
   left: 15px;
   top: 13px;
   opacity: 0.5;
+}
+
+.sing-in-link:hover::before {
+  background-image: url("../img/sing-in-active.svg");
 }
 
 .check-in a {
@@ -447,6 +481,10 @@ input:focus ~ .search-icon-svg path {
   padding-top: auto;
 }
 
+.user-nav li:not(:first-child) {
+  list-style: disc;
+}
+
 .user-nav-orders {
  
 }
@@ -460,13 +498,15 @@ input:focus ~ .search-icon-svg path {
   width: 940px;
   margin: 0 auto;
   display: flex;
-  height: 55px;
+  height: 60px;
   justify-content: space-around;
   align-items: center;
   background-color: var(--blue);
   border-bottom: 5px solid var(--darck-blue);
   list-style: none;
-  
+  box-sizing: border-box;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .site-navigation-item {
@@ -515,36 +555,36 @@ input:focus ~ .search-icon-svg path {
 }
 
 .promo {
-  margin-bottom: 20px;
+  margin-bottom: 59px;
 }
 
 .promo-item-material {
-  background: url("../img/promo-icons/promo-icon-1.svg") no-repeat 220px 35px;
+  background: url("../img/promo-icons/promo-icon-1.svg") no-repeat 213px 31px;
   background-color: var(--ylellow);
   grid-area: material;
 }
 
 
 .promo-item-tool {
-  background: url("../img/promo-icons/promo-icon-2.svg") no-repeat 200px 35px;
+  background: url("../img/promo-icons/promo-icon-2.svg") no-repeat 194px 34px;
   background-color: var(--special-blue);
   grid-area: tool;
 }
 
 .promo-item-technic {
-  background: url("../img/promo-icons/promo-icon-3.svg") no-repeat 200px 35px;
+  background: url("../img/promo-icons/promo-icon-3.svg") no-repeat 191px 31px;
   background-color: var(--special-lilac);
   grid-area: technic;
 }
 
 .promo-item-discount {
-  background: url("../img/promo-icons/promo-icon-4.svg") no-repeat 200px 35px;
+  background: url("../img/promo-icons/promo-icon-4.svg") no-repeat 196px 26px;
   background-color: var(--special-greenlight);
   grid-area: discount;
 }
 
 .promo-item-delivery {
-  background: url("../img/promo-icons/promo-icon-5.svg") no-repeat 200px 35px;
+  background: url("../img/promo-icons/promo-icon-5.svg") no-repeat 191px 32px;
   background-color: var(--ylellow);
   grid-area: delivery;
 } 
@@ -553,9 +593,10 @@ input:focus ~ .search-icon-svg path {
   font-size: 24px;
   line-height: 30px;
   color: var(--white);
-  margin-top: 20px;
-  margin-left: 22px;
+  margin-top: 21px;
+  margin-left: 23px;
   margin-bottom: 14px;
+  font-family: "Cuprum";
 }
 
 .promo-list {
@@ -596,6 +637,7 @@ input:focus ~ .search-icon-svg path {
   width: 100%;
   padding-top: 10px;
   background-color: var(--promo-link);
+  font-family: "Cuprum";
 }
 
 .promo-item-link:hover {
@@ -641,7 +683,7 @@ input:focus ~ .search-icon-svg path {
 .promo-slider-item-description {
   position: absolute;
   margin: 0;
-  top: 64px;
+  top: 65px;
   left: 24px;
 }
 
@@ -651,6 +693,7 @@ input:focus ~ .search-icon-svg path {
 
 .promo-slider-item {
   display: none;
+  font-family: "Cuprum";
 }
 
 .slide-current {
@@ -659,8 +702,8 @@ input:focus ~ .search-icon-svg path {
 
 .slider-button {
   position: absolute;
-  bottom: 27px;
-  left: 24px;
+  bottom: 33px;
+  left: 25px;
 }
 
 .promo-gallery-button {
@@ -680,7 +723,7 @@ input:focus ~ .search-icon-svg path {
 
 .gallery-button-next {
   position: absolute;
-  right: 24px;
+  right: 20px;
   top: 122px;
   background-image: url(../img/icon-next.svg);
 }
@@ -688,8 +731,8 @@ input:focus ~ .search-icon-svg path {
 .promo-gallery-button-point {
   position: absolute;
   padding: 0;
-  left: 295px;
-  bottom: 36px;
+  left: 296px;
+  bottom: 44px;
   display: flex;
   width: 29px;
   height: 10px;
@@ -726,7 +769,6 @@ input:focus ~ .search-icon-svg path {
   line-height: 24px;
   color: var(--white);
 }
-
 
 
 .button {
@@ -1623,6 +1665,23 @@ input:focus ~ .search-icon-svg path {
 
 .range-controls .toggle-max {
   left: 160px;
+}
+
+.filter-button {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--grey-border);
+}
+
+.filter-button:hover {
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+}
+
+.filter-button:active {
+  border: 1px solid var(--red);
+  background-color: var(--white);
 }
 
 /* Sorting */
