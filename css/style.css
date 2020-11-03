@@ -43,6 +43,9 @@
   --modal-footer-background: #F1F1F1;
   --scale: #D7DCDE;
   --bar :#00CA74;
+  --features-shadow: #405069;
+  --brands-shadov-hover: rgba(0, 0, 0, 0.15);
+  --modal-feedback-shadow: rgba(0, 0, 0, 0.15);
 }
 
 /* Global */
@@ -123,10 +126,8 @@ a {
   display: grid;
 }
 
-
 .main-header-bar {
   background-color: var(--darck-blue);
-  /* margin-bottom: 41px; */
 }
 
 .main-nav-wrap-top {
@@ -148,10 +149,9 @@ a {
   box-shadow: 0 5px 0 0 var(--shadow-logo);
 }
 
-.main-header-logo:active{
+.main-header-logo:active {
   background-color: var(--darkest-red);
 }
-
 
 .header-address {
   color:var(--blue);
@@ -173,10 +173,9 @@ a {
   opacity: 0.5;
 }
 
-.header-search:hover svg{
+.header-search:hover svg {
   opacity: 1;
 }
-
 
 .header-search input {
   width: 271px;
@@ -209,14 +208,10 @@ input:focus ~ .search-icon-svg path {
   fill: var(--red);
 }
 
-
 .bookmarks,
 .basket {
   color: var(--white);
-  /* margin: 0 auto; */
 }
-
-
 
 .bookmarks:active,
 .basket:active,
@@ -311,11 +306,9 @@ input:focus ~ .search-icon-svg path {
 
 .main-nav-wrap-midle {
   display: flex;
-  /* justify-content: space-between; */
   width: 940px;
   margin: 0 auto;
   align-items: top;
-  /* margin-bottom: 40px; */
   box-sizing: border-box;
   height: 158px;
   padding-top: 41px;
@@ -368,14 +361,9 @@ input:focus ~ .search-icon-svg path {
 
 .authorization-list {
   padding: 0px;
-  margin: 0;
+  margin: 5px 0 0 auto;
   display: flex;
-  margin-top: 5px;
-  margin-left: auto;
 }
-
-
-
 
 .authorization-item {
   list-style: none;
@@ -395,13 +383,10 @@ input:focus ~ .search-icon-svg path {
   color: var(--gray);
 }
 
-.sing-in a{
+.sing-in a {
   width: 121px;
   box-sizing: border-box;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-  padding-left: 45px;
+  padding: 12px 24px 12px 45px;
   display: block;
   background-color: var(--white);
   margin-right: 10px;
@@ -451,7 +436,6 @@ input:focus ~ .search-icon-svg path {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   height: 75px;
   margin-left: auto;
   margin-top: 5px;
@@ -498,10 +482,6 @@ input:focus ~ .search-icon-svg path {
   list-style: disc;
 }
 
-.user-nav-orders {
- 
-}
-
 .user-nav-cabinet {
   margin-left: 30px;
 }
@@ -532,10 +512,7 @@ input:focus ~ .search-icon-svg path {
   line-height: 24px;
   color: var(--white);
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 16px 25px 16px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -548,10 +525,6 @@ input:focus ~ .search-icon-svg path {
 .site-navigation-item a:active {
   background-color: var(--site-navigation-item-active);
   opacity: 0.5;
-}
-
-.site-navigation li {
-  
 }
 
 .visually-hidden {
@@ -576,7 +549,6 @@ input:focus ~ .search-icon-svg path {
   background-color: var(--ylellow);
   grid-area: material;
 }
-
 
 .promo-item-tool {
   background: url("../img/promo-icons/promo-icon-2.svg") no-repeat 194px 34px;
@@ -609,7 +581,7 @@ input:focus ~ .search-icon-svg path {
   margin-top: 21px;
   margin-left: 23px;
   margin-bottom: 14px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .promo-list {
@@ -652,7 +624,7 @@ input:focus ~ .search-icon-svg path {
   width: 100%;
   padding-top: 10px;
   background-color: var(--promo-link);
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .promo-item-link:hover {
@@ -663,10 +635,7 @@ input:focus ~ .search-icon-svg path {
   background-color: var(--promo-link-active);
 }
 
-
 /* Container */
-
-
 
 .container {
   width: 940px;
@@ -708,8 +677,7 @@ input:focus ~ .search-icon-svg path {
 
 .promo-slider-item {
   display: none;
-  font-family: "Cuprum";
-  box-shadow: inset 0 10px 0 0 rgba(255, 0, 0, 0.5);
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .slide-current {
@@ -786,10 +754,9 @@ input:focus ~ .search-icon-svg path {
   color: var(--white);
 }
 
-
 .button {
   background-color: var(--red);
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -818,9 +785,8 @@ input:focus ~ .search-icon-svg path {
   outline: none;
 }
 
-
 .section-title {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: var(--blue);
@@ -871,7 +837,7 @@ input:focus ~ .search-icon-svg path {
   min-height: 318px;
   box-sizing: border-box;
   border: 1px solid var(--brends-borere);
-  padding-bottom: 13px;
+  padding-bottom: 23px;
   position: relative;
   overflow: hidden;
 }
@@ -880,13 +846,12 @@ input:focus ~ .search-icon-svg path {
   margin-right: 0;
 }
 
-
 .prosuct-title {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
   text-align: center;
-  margin-top: 0;
+  margin-top: 2px;
   width: 185px;
   margin-bottom: 8px
 }
@@ -900,10 +865,9 @@ input:focus ~ .search-icon-svg path {
   justify-content: center;
   margin-bottom: 9px;
   background-color: var(--white);
-  width: 1
 }
 
-.new-product::after{
+.new-product::after {
   content: "New";
   text-transform: uppercase;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -922,7 +886,7 @@ input:focus ~ .search-icon-svg path {
   top: 8px;
 }
 
-.new-promo::after{
+.new-promo::after {
   content: "New";
   text-transform: uppercase;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -941,7 +905,6 @@ input:focus ~ .search-icon-svg path {
   top: 8px;
 }
 
-
 .old-price {
   font-size: 17px;
   line-height: 18px;
@@ -959,11 +922,9 @@ input:focus ~ .search-icon-svg path {
   line-height: 18px;
   font-weight: bold;
   width: 141px;
-  height: 39px;
   text-transform: uppercase;
   color: var(--white);
   background: url(../img/background-price.svg) no-repeat;
-  display: block;
   margin: 0px;
   display: flex;
   justify-content: center;
@@ -975,9 +936,8 @@ input:focus ~ .search-icon-svg path {
   box-sizing: border-box;
   padding-top: 9px;
   padding-left: 34px;
-  /* margin-top: auto; */
+  margin-top: auto;
 }
-
 
 .product-button-list {
   list-style: none;
@@ -994,14 +954,13 @@ input:focus ~ .search-icon-svg path {
 }
 
 .product-button-list a {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   display: block;
   padding: 10px 12px 10px 25px;
 }
-
 
 .button-buy {
   background-color: var(--green);
@@ -1043,9 +1002,6 @@ input:focus ~ .search-icon-svg path {
   box-shadow: inset 0px -3px 0px var(--green-shadow);
 }
 
-
-
-
 .button-bookmark a {
   color: var(--blue);
   box-sizing: border-box;
@@ -1065,9 +1021,7 @@ input:focus ~ .search-icon-svg path {
   opacity: 0.5;
 }
 
-
 /* Features */
-
 
 .features {
   color: var(--black);
@@ -1094,7 +1048,7 @@ input:focus ~ .search-icon-svg path {
 }
 
 .features-title {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1125,18 +1079,18 @@ input:focus ~ .search-icon-svg path {
 .features-nav-list .features-nav-item-active a {
   color: var(--blue);
   background-color: var(--white);
-  box-shadow: 0px 1px 0px #FFFFFF;
+  box-shadow: 0px 1px 0px var(--white);
 }
 
 .features-nav-item {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
   height: 63px;
   display: flex;
   box-shadow: 
-  0px 1px 0px #293449, 
-  inset 0px 1px 0px #405069;
+  0px 1px 0px var(--darck-blue), 
+  inset 0px 1px 0px var(--features-shadow);
   background-color: var(--blue);
 }
 
@@ -1149,7 +1103,7 @@ input:focus ~ .search-icon-svg path {
   font-weight: 700;
 }
 
-.features-nav-item a:hover{
+.features-nav-item a:hover {
   background-color: var(--darck-blue);
 }
 
@@ -1168,7 +1122,7 @@ input:focus ~ .search-icon-svg path {
 }
 
 .features-list-title {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1241,7 +1195,7 @@ input:focus ~ .search-icon-svg path {
 }
 
 .brands-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--brands-shadov-hover);
 }
 
 .brands-item img {
@@ -1256,13 +1210,12 @@ input:focus ~ .search-icon-svg path {
 /* About */
 
 .about {
-  /* margin-bottom: 70px; */
   height: 450px;
   box-sizing: border-box;
 }
 
 .abuot-title {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1273,7 +1226,7 @@ input:focus ~ .search-icon-svg path {
 }
 
 .about-list {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
@@ -1318,9 +1271,8 @@ input:focus ~ .search-icon-svg path {
 
 /* Contacts */
 
-
 .contacts-title {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1332,7 +1284,7 @@ input:focus ~ .search-icon-svg path {
 
 .contacts-button {
   background-color: var(--red);
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1361,16 +1313,13 @@ input:focus ~ .search-icon-svg path {
 }
 /* Footer */
 
-
 .main-footer {
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   background-color: var(--blue);
   height: 300px;
   display: flex;
   flex-direction: column;
 }
-
-
 
 .footer-upper-box {
   width: 940px;
@@ -1387,7 +1336,7 @@ input:focus ~ .search-icon-svg path {
   box-shadow: 0 5px 0 0 var(--shadow-logo);
 }
 
-.footer-logo:active{
+.footer-logo:active {
   background-color: var(--darkest-red);
 }
 
@@ -1412,8 +1361,6 @@ input:focus ~ .search-icon-svg path {
   padding-top: 20px;
 }
 
-
-
 .footer-address {
   font-size: 18px;
   line-height: 24px;
@@ -1437,7 +1384,6 @@ input:focus ~ .search-icon-svg path {
 .footet-site-nav a {
   color: var(--special-white-foooter-nav);
 }
-
 
 .footet-site-nav a:hover,
 .footer-products-nav a:hover {
@@ -1479,7 +1425,6 @@ input:focus ~ .search-icon-svg path {
 .footer-social-item {
   margin-right: 1px;
 }
-
 
 .footer-social-item a {
   width: 44px;
@@ -1535,7 +1480,7 @@ input:focus ~ .search-icon-svg path {
 .header-user-nav .user-nav  {
   padding: 0;
   margin: 0;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   margin-top: 7px;
 }
 
@@ -1564,15 +1509,12 @@ input:focus ~ .search-icon-svg path {
   margin: 0;
   margin-bottom: 20px;
   margin-top: -40px;
-
 }
 
 .breadcrumbs-item {
   padding-left: 40px;
   position: relative;
 }
-
-
 
 .breadcrumbs-item:not(:first-child)::before {
   content: "";
@@ -1598,8 +1540,6 @@ input:focus ~ .search-icon-svg path {
   width: 220px;
   grid-area: filters;
 }
-
-
 
 .filters ul {
   list-style: none;
@@ -1641,7 +1581,6 @@ input:focus ~ .search-icon-svg path {
 .filters .filter-brands {
   margin-bottom: 20px;
 }
-
 
 .filters fieldset:last-child {
   margin-bottom: 0;
@@ -1694,6 +1633,7 @@ input:focus ~ .search-icon-svg path {
   background-position: 0 0;
   top: -2px;
   left: -35px;
+  background-color: var(--white);
 }
 
 .filter-input-radio + label::before {
@@ -1820,8 +1760,7 @@ input:focus ~ .search-icon-svg path {
   text-transform: uppercase;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-left: 19px;
+  margin: 0 100px 0 19px;
 }
 
 .sorting-list {
@@ -1830,15 +1769,15 @@ input:focus ~ .search-icon-svg path {
   margin: 0;
   text-transform: uppercase;
   display: flex;
+  width: 355px;
+  justify-content: space-between;
 }
 
 .sorting-item {
   font-size: 13px;
   line-height: 18px;
-  margin-left: 65px;
   position: relative;
 }
-
 
 .sorting-item a {
   border-bottom: 1px dashed var(--red);
@@ -1856,7 +1795,6 @@ input:focus ~ .search-icon-svg path {
   opacity: 1;
   border: none;
 }
-
 
 .sorting-current:hover a {
   color: var(--red);
@@ -1899,19 +1837,18 @@ input:focus ~ .search-icon-svg path {
 .pagination li {
   width: 38px;
   height: 38px;
-  
   border-radius: 2px;
 }
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 8px;
   width: 38px;
   height: 38px;
   border: 1px solid var(--grey-border);
   border-radius: 2px;
 }
 
-.pagination-item a{
+.pagination-item a {
   display: flex;
   color: var(--black);
   justify-content: center;
@@ -1922,7 +1859,6 @@ input:focus ~ .search-icon-svg path {
 .pagination-item:hover {
   border: 1px solid var(--gray);
 }
-
 
 .pagination-item:active {
   border: 1px solid var(--red);
@@ -1947,7 +1883,6 @@ input:focus ~ .search-icon-svg path {
   border: 1px solid var(--red);
 }
 
-
 .pagination-active a {
   color: var(--white);
 }
@@ -1955,8 +1890,6 @@ input:focus ~ .search-icon-svg path {
 .products-catalog {
   grid-area: products;
 }
-
-
 
 .desc {
   height: 261px;
@@ -1967,10 +1900,6 @@ input:focus ~ .search-icon-svg path {
 
 .desc-title {
   margin: 0 0 25px 0;
-}
-
-.desc-description {
-
 }
 
 .main-title-catalog {
@@ -2009,7 +1938,7 @@ input:focus ~ .search-icon-svg path {
 
 .modal-title-form {
   display: block;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 11px;
@@ -2021,7 +1950,7 @@ input:focus ~ .search-icon-svg path {
   box-sizing: border-box;
   border: 2px solid var(--gray);
   border-radius: 2px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-left: 12px;
@@ -2040,16 +1969,15 @@ input:focus ~ .search-icon-svg path {
   height: 112px;
   background-color: var(--modal-footer-background);
   padding-left: -80px;
-  margin-top: auto;
+  margin-top: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .modal-button {
   background-color: var(--red);
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2115,11 +2043,12 @@ input:focus ~ .search-icon-svg path {
   width: 620px;
   min-height: 430px;
   box-sizing: border-box;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--modal-feedback-shadow);
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   display: none;
+  z-index: 10;
 }
 
 .modal-feedback-wrap {
@@ -2143,6 +2072,11 @@ input:focus ~ .search-icon-svg path {
   width: 943px;
   height: 450px;
   display: none;
+  z-index: 10;
+}
+
+.modal-map iframe {
+  border: 0;
 }
 
 /* Molad Basket */
