@@ -492,7 +492,6 @@ input:focus ~ .search-icon-svg path {
 
 .user-nav {
   display: flex;
-  margin-top: 60px;
 }
 
 .user-nav li:not(:first-child) {
@@ -1269,6 +1268,8 @@ input:focus ~ .search-icon-svg path {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .about-list {
@@ -1325,6 +1326,8 @@ input:focus ~ .search-icon-svg path {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .contacts-button {
@@ -1529,10 +1532,11 @@ input:focus ~ .search-icon-svg path {
 
 /* User nav */
 
-.user-nav {
+.header-user-nav .user-nav  {
   padding: 0;
   margin: 0;
   font-family: Cuprum;
+  margin-top: 7px;
 }
 
 .user-nam-name {
