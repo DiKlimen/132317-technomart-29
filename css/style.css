@@ -1398,7 +1398,7 @@ input:focus ~ .search-icon-svg path {
 .footer-upper {
   display: grid;
   grid-template-rows: 68px 1fr;
-  grid-template-columns: 325px 1fr;
+  grid-template-columns: 326px 1fr;
   height: 193px;
 }
 
