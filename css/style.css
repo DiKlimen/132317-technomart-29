@@ -1073,7 +1073,7 @@ input:focus ~ .search-icon-svg path {
 .features-nav-list {
   list-style: none;
   padding: 0px;
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 .features-nav-list .features-nav-item-active a {
@@ -1377,7 +1377,7 @@ features-credit .features-list-description {
   display: flex;
   width: 940px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 34px;
 }
 
 .footer-address {
@@ -1435,10 +1435,9 @@ features-credit .features-list-description {
 
 .footer-social-list {
   list-style: none;
-  padding: 0px;
+  padding: 0;
   display: flex;
-  margin-left: 30px;
-  margin-left: 163px;
+  margin: 0 118px 0 0;
 }
 
 .footer-social-item {
@@ -1463,6 +1462,8 @@ features-credit .features-list-description {
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
+  margin: 2px 161px 0 0;
+  width: 227px;
 }
 
 .footer-email,
@@ -1487,11 +1488,20 @@ features-credit .features-list-description {
 }
 
 .footer-email {
-  margin-left: 117px; 
+  margin: 0 51px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email p,
+.footer-development p {
+  margin: 0; 
 }
 
 .footer-development {
-  margin-left: 51px; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* User nav */
@@ -1623,7 +1633,7 @@ features-credit .features-list-description {
 
 .filter-option {
   padding-left: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .filter-option:last-child {
@@ -1748,7 +1758,7 @@ features-credit .features-list-description {
   background-color: var(--white);
   color: var(--black);
   border: 1px solid var(--grey-border);
-  margin-top: 19px;
+  margin-top: 21px;
 }
 
 .filter-button:hover {
