@@ -352,7 +352,7 @@ input:focus ~ .search-icon-svg path {
   position: absolute;
   width: 19px;
   height: 19px;
-  background-image: url(../img/icon-phone.svg);
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -7px;
@@ -461,7 +461,7 @@ input:focus ~ .search-icon-svg path {
 
 .user-nav-username::before {
   content: "";
-  background: url(../img/icon-user.svg) no-repeat;
+  background: url("../img/icon-user.svg") no-repeat;
   width: 20px;
   height: 18px;
   position: absolute;
@@ -572,7 +572,7 @@ input:focus ~ .search-icon-svg path {
   background: url("../img/promo-icons/promo-icon-5.svg") no-repeat 191px 32px;
   background-color: var(--ylellow);
   grid-area: delivery;
-} 
+}
 
 .promo-item-title {
   font-size: 24px;
@@ -702,14 +702,14 @@ input:focus ~ .search-icon-svg path {
   position: absolute;
   left: 24px;
   top: 122px;
-  background-image: url(../img/icon-back.svg);
+  background-image: url("../img/icon-back.svg");
 }
 
 .gallery-button-next {
   position: absolute;
   right: 20px;
   top: 122px;
-  background-image: url(../img/icon-next.svg);
+  background-image: url("../img/icon-next.svg");
 }
 
 .promo-gallery-button-point {
@@ -846,6 +846,10 @@ input:focus ~ .search-icon-svg path {
   margin-right: 0;
 }
 
+.products-item:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 .product-title {
   font-size: 18px;
   line-height: 20px;
@@ -924,7 +928,7 @@ input:focus ~ .search-icon-svg path {
   width: 141px;
   text-transform: uppercase;
   color: var(--white);
-  background: url(../img/background-price.svg) no-repeat;
+  background: url("../img/background-price.svg") no-repeat;
   margin: 0px;
   display: flex;
   justify-content: center;
@@ -1037,7 +1041,7 @@ input:focus ~ .search-icon-svg path {
 }
 
 .features-separator {
-  background-image: url(../img/separator.png);
+  background-image: url("../img/separator.png");
   background-repeat: no-repeat;
   height: 279px;
   width: 10px;
@@ -1076,12 +1080,6 @@ input:focus ~ .search-icon-svg path {
   margin-top: 12px;
 }
 
-.features-nav-list .features-nav-item-active a {
-  color: var(--blue);
-  background-color: var(--white);
-  box-shadow: 0px 1px 0px var(--white);
-}
-
 .features-nav-item {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -1101,6 +1099,12 @@ input:focus ~ .search-icon-svg path {
   align-items: center;
   padding-left: 22px;
   font-weight: 700;
+}
+
+.features-nav-item-active a {
+  color: var(--blue);
+  background-color: var(--white);
+  box-shadow: 0px 1px 0px var(--white);
 }
 
 .features-nav-item a:hover {
@@ -1146,8 +1150,6 @@ input:focus ~ .search-icon-svg path {
 features-credit .features-list-description {
   width: 310px;
 }
-
-
 
 .feature-delivery {
   background: url("../img/features/features-delivery-icon.png") no-repeat 100% 21px;
@@ -1207,6 +1209,10 @@ features-credit .features-list-description {
 
 .brands-item:hover {
   box-shadow: 0px 4px 20px var(--brands-shadov-hover);
+}
+
+.brands-item:active {
+  opacity: 0.7;
 }
 
 .brands-item img {
@@ -1311,7 +1317,8 @@ features-credit .features-list-description {
   margin-top: 17px;
 }
 
-.contacts-button:active, .contacts-button:focus {
+.contacts-button:active, 
+.contacts-button:focus {
   outline: none;
 }
 
@@ -1640,12 +1647,27 @@ features-credit .features-list-description {
   margin-bottom: 0;
 }
 
+.filter-option label[for^="filter-"]:before,
+.filter-option label[for^="filter-"]:after {
+  opacity: 0.7;
+}
+
+.filter-option:hover label[for^="filter-"]:before,
+.filter-option:hover label[for^="filter-"]:after {
+  opacity: 1;
+}
+
+input[class*="filter-input-"]:disabled + label[for^="filter-"]:before,
+input[class*="filter-input-"]:disabled + label[for^="filter-"]:after {
+  opacity: 0.2;
+}
+
 .filter-input-checkbox + label:before {
   content: "";
   position: absolute;
   height: 23px;
   width: 23px;
-  background-image: url(../img/filter-icons/checkbox-off.svg);
+  background-image: url("../img/filter-icons/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
@@ -1657,7 +1679,7 @@ features-credit .features-list-description {
   position: absolute;
   width: 27px;
   height: 23px;
-  background-image: url(../img/filter-icons/checkbox-on.svg);
+  background-image: url("../img/filter-icons/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   top: -2px;
@@ -1670,7 +1692,7 @@ features-credit .features-list-description {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url(../img/filter-icons/radio-off.svg);
+  background-image: url("../img/filter-icons/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
@@ -1682,7 +1704,7 @@ features-credit .features-list-description {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url(../img/filter-icons/radio-on.svg);
+  background-image: url("../img/filter-icons/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -35px;
@@ -1704,7 +1726,7 @@ features-credit .features-list-description {
 .price-controls {
   display: flex;
   justify-content: space-between;
-  background-image: url(../img/filter-icons/dash.png);
+  background-image: url("../img/filter-icons/dash.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1736,7 +1758,7 @@ features-credit .features-list-description {
 .range-controls .toggle {
   width: 20px;
   height: 22px;
-  background-image: url(../img/filter-icons/filter-button.svg);
+  background-image: url("../img/filter-icons/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -1809,7 +1831,7 @@ features-credit .features-list-description {
 }
 
 .sorting-item a {
-  border-bottom: 1px dashed var(--red);
+  border-bottom: 1px dotted var(--red);
   opacity: 0.3;
 }
 
@@ -1844,6 +1866,10 @@ features-credit .features-list-description {
   width: 11px;
   height: 10px;
   cursor: pointer;
+}
+
+.sorting-button:hover path {
+  fill: var(--black);
 }
 
 .sorting-current path {
@@ -2021,7 +2047,8 @@ features-credit .features-list-description {
   height: 38px;
 }
 
-.modal-button:active, .modal-button:focus {
+.modal-button:active, 
+.modal-button:focus {
   outline: none;
 }
 
@@ -2137,7 +2164,7 @@ features-credit .features-list-description {
   content: "";
   width: 66px;
   height: 66px;
-  background: url(../img/icon-mark.svg) no-repeat 0 0;
+  background: url("../img/icon-mark.svg") no-repeat 0 0;
   position: absolute;
   left: 81px;
   top: 55px;
